@@ -2,7 +2,7 @@
 
 # Roaster-API community edition with documentation
 
-Welcome to <b>Roaster-API community edition</b> GitHub repository! This repository contains both Roaster APIs source codes (at `roaster-api` folder) with static documentation infra & content.
+Welcome to <b>Roaster-API community edition</b> GitHub repository! This repository contains both Roaster APIs source codes (at `roaster-api` folder) with static documentation infra and content.
 
 Note that [documantation web page](https://salmon-coast-098ef9d00.azurestaticapps.net/) is powered by [Azure Static Web Apps](https://docs.microsoft.com/en-us/azure/static-web-apps/overview) and [GitHub Actions](https://github.com/features/actions) using [Hugo framework](https://gohugo.io/).
 
