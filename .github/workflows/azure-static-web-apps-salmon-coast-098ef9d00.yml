@@ -7,7 +7,7 @@ on:
     paths:
       - '**'
       - '!roaster-api/**'
-    pull_request:
+  pull_request:
     types: [opened, synchronize, reopened, closed]
     branches:
       - main
