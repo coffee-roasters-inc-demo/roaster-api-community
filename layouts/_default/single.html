@@ -1,14 +1,14 @@
 {{ partial "header.html" . }}
 
-{{ if eq .Title "About Me" }}
+{{ if eq .Title "About company" }}
 	{{ partial "logo" . }}
 	{{ partial "about" . }}
 {{ else }}
   {{ partial "logo-post" . }}
-	{{ partial "post" . }}
+	{{ partial "welcome" . }}
 {{ end }}
 
-{{ if ne .Title "About Me" }}
+{{ if ne .Title "About company" }}
 <div class="paging post-paging">
   {{ if ne .Params.prevp "" }}
   {{ range where .Site.RegularPages "Title" "eq" .Params.prevp }}

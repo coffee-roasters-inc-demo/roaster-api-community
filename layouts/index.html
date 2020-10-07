@@ -1,7 +1,7 @@
 {{ partial "header" . }}
 {{ partial "logo" . }}
 
-{{ $paginator := .Paginate ( where .Pages "Title" "!=" "About Me" ) }}
+{{ $paginator := .Paginate ( where .Pages "Title" "!=" "About company" ) }}
 {{ range $paginator.Pages }}
   {{ .Render "summary"}}
   <hr class="summary-sep" />
