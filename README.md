@@ -1,4 +1,4 @@
-![GitHub Actions badge](https://github.com/coffee-roasters-inc-demo/roaster-api-community/workflows/Azure%20Static%20Web%20Apps%20CI%2FCD/badge.svg "Status on GitHub Actions with Azure Static Web App")
+[![GitHub Actions badge](https://github.com/coffee-roasters-inc-demo/roaster-api-community/workflows/Azure%20Static%20Web%20Apps%20CI%2FCD/badge.svg "Status on GitHub Actions with Azure Static Web App")](https://github.com/coffee-roasters-inc-demo/roaster-api-community/actions?query=workflow%3A%22Azure+Static+Web+Apps+CI%2FCD%22)
 
 # Roaster-API community edition with documentation
 
