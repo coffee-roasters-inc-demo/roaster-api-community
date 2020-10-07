@@ -1,10 +1,18 @@
-# GitHub Actions example repository with Hugo static web app
+![GitHub Actions badge](https://github.com/openstack-kr/contributhon-2020/workflows/Azure%20Static%20Web%20Apps%20CI%2FCD/badge.svg "Status on GitHub Actions with Azure Static Web App")
 
-This repository demonstrates [Azure Static Web Apps](https://docs.microsoft.com/en-us/azure/static-web-apps/overview)
-with [GitHub Actions](https://github.com/features/actions) using [Hugo framework](https://gohugo.io/).
+# Roaster-API community edition with documentation
 
-## Resources
+Welcome to <b>Roaster-API community edition</b> GitHub repository! This repository contains both Roaster APIs - community edition: programming source codes with documentation. 
 
-- [Tutorial: Publish a Hugo site to Azure Static Web Apps Preview](https://docs.microsoft.com/en-us/azure/static-web-apps/publish-hugo)
-- [GitHub Actions: Hello World](https://lab.github.com/githubtraining/github-actions:-hello-world)
-- [GitHub Actions: Continuous Delivery with Azure](https://lab.github.com/githubtraining/github-actions:-continuous-delivery-with-azure)
+Note that documantation web pages are powered by [Azure Static Web Apps](https://docs.microsoft.com/en-us/azure/static-web-apps/overview) and [GitHub Actions](https://github.com/features/actions) using [Hugo framework](https://gohugo.io/).
+
+## Running Roaster-API locally
+
+1. Run `dotnet run -p generator/src/generator.csproj -- . "http://localhost:8000/" _site` to build the HTML files.
+2. Run `./copy-assets.bash _site` to copy assets into the target directory.
+3. Run `python3 -m http.server 8000 --directory _site/` (or whatever your favorite static http server is) to serve the website at port 8000.
+4. Open `http://localhost/:8000` in your web browser to view the result.
+
+## Contribute
+
+- Please see more details on [LICENSE](LICENSE) and [Contributing]() section on documentation.
