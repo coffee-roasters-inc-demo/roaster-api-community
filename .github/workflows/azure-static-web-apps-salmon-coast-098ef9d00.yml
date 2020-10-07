@@ -5,12 +5,14 @@ on:
     branches:
       - main
     paths:
+      - '**'
       - '!roaster-api/**'
     pull_request:
     types: [opened, synchronize, reopened, closed]
     branches:
       - main
     paths:
+      - '**'
       - '!roaster-api/**'
 
 jobs:
