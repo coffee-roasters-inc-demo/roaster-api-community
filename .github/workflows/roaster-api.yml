@@ -1,0 +1,31 @@
+# Roaster-API Tests -- only needs to be run if there are changes on roaster-api folder
+
+name: Roaster-API Tests
+
+# Runs if there are changes on roaster-api folder
+on:
+  push:
+    branches: [ main ]
+    paths: 
+    - 'roaster-api/'
+  pull_request:
+    branches: [ main ]
+    paths: 
+    - 'roaster-api/'
+      
+jobs:
+  data:
+    runs-on: ubuntu-latest
+    steps:
+    # Trigger internal test logics
+    - name: Upload data
+      uses: JimCronqvist/action-ssh@master
+      env:
+        AZURE_CREDENTIALS: '${{ secrets.AZURE_CREDENTIALS }}'
+      with:
+        hosts: ${{ secrets.APISERVERUSERNAME }}@${{ secrets.APISERVERHOST }}
+        privateKey: ${{ secrets.APISERVERKEY }}
+        command: |
+          cd roaster-api-community
+          export AZURE_CREDENTIALS
+          ./test-open-sources.sh
