@@ -2,6 +2,8 @@
 
 This is the source code for Roaster APIs - community edition!
 
+See more details at [community documantation](https://salmon-coast-098ef9d00.azurestaticapps.net/).
+
 ## Running locally
 
 1. Run `dotnet run -p generator/src/generator.csproj -- . "http://localhost:8000/" _site` to build the HTML files.
