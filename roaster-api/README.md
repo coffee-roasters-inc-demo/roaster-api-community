@@ -1,6 +1,6 @@
-# Roaster-API with documentation (internal)
+# Roaster-API community edition
 
-This is the source code for Roaster APIs with an example of a documentation project.
+This is the source code for Roaster APIs - community edition!
 
 ## Running locally
 
