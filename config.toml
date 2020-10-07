@@ -1,4 +1,22 @@
-baseURL = "http://example.org/"
+baseURL = "https://salmon-coast-098ef9d00.azurestaticapps.net/"
 languageCode = "en-us"
-title = "My New Hugo Site"
-theme = "ananke"
+title = "Roaster-API: Community Documentation"
+
+disqusShortname = ""
+
+theme = "hugo-hello-programmer-theme"
+
+paginate = 4
+
+googleAnalytics = ""
+
+summaryLength = 30
+
+[author]
+    name = "Ian Choi"
+    email = "ianyrchoi@gmail.com"
+
+[taxonomies]
+  category = "categories"
+  subcategory = "subcategories"
+  tag = "tags"
